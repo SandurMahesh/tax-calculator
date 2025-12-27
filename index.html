@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tax Calculator</h1>
+        <form action="#">
+            <div class="tax-year">
+                <label for="">Tax year:</label>
+                <select  id="tax-year">
+                    <option value="">2025</option>
+                    <option value="">2024</option>
+                    <option value="">2023</option>
+                    <option value="">2022</option>
+                    <option value="">2021</option>
+                    <option value="">2020</option>
+                </select>
+            </div>
+            <div class="income">
+                <label for="">Income:</label>
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <!--<i class="fa-solid fa-dollar-sign"></i>-->
+                <input type="number" placeholder="" class="income-input">
+            </div>
+            <div class="results">
+                <p>Estimated Amount</p>
+                <input type="text" placeholder="₹0" class="results-input"/> 
+            </div>
+            <div class="buttons">
+                <button id="calculate" type="button">Calculate</button>
+                <button id="reset" type="button">Reset</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
